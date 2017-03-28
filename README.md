@@ -1,10 +1,9 @@
-# Brunch With Bower , Bootstrap Sass And jQuery
+# Brunch With Bower, Bootstrap Sass, jQuery and Handlebars
 
-[![project status](http://www.repostatus.org/badges/latest/active.svg)](http://www.gitchecker.com/hyyan/brunch-with-hyyan)
-[![dependency Status](https://david-dm.org/hyyan/brunch-with-hyyan/status.svg)](https://david-dm.org/hyyan/brunch-with-hyyan#info=dependencies)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hyyan/brunch-with-hyyan/blob/master/LICENSE)
+[![dependency Status](https://david-dm.org/hyyan/brunch-with-pedro/status.svg)](https://david-dm.org/hyyan/brunch-with-pedro#info=dependencies)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hyyan/brunch-with-pedro/blob/master/LICENSE)
 
-HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass And jQuery
+HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass, jQuery and Handlebars
 
 ## Getting started
 * Install (if you don't have them):
@@ -19,6 +18,8 @@ HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass And jQu
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
+    * Place layouts in `app/layouts/` to be compiled by [html-brunch-static](https://github.com/bmatcuk/html-brunch-static).
+    * Place partials in `app/partials/` to be compiled by [html-brunch-static](https://github.com/bmatcuk/html-brunch-static).
     * Place styles in `app/scss/styles` to be compiled to `public/css/app.css`
     * Place styles in `app/scss/styles-rtl` to be compiled to `public/css/app-rtl.css`
     * Place styles in `app/scss/editor` to be compiled to `public/css/editor.css`
@@ -27,7 +28,5 @@ HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass And jQu
     * [Brunch site](http://brunch.io)
     * [Sass site](http://sass-lang.com)
     * [Bootstrap site](http://getbootstrap.com)
-   
-## How To Use With Wordpress
-You can use the [Brunch Wordpress Theme](https://github.com/hyyan/brunch-wordpress-theme) starter theme , which make use of all features of this skeleton in wordpress context.
+    * [Handlebars site](http://handlebarsjs.com)
 

@@ -1,10 +1,11 @@
 {
-  "name": "brunch-with-hyyan",
+  "name": "brunch-with-pedro",
   "authors": [
-    "Hyyan Abo Fakher <hyyanaf@gmail.com>"
+    "Hyyan Abo Fakher <hyyanaf@gmail.com>",
+    "Pedro Maia Costa <geral@pmcdigital.pt>"
   ],
   "license": "MIT",
-  "private": "true",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,8 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.1",
-    "bootstrap-sass-official": "x",
+    "jquery": "2.2.4",
+    "bootstrap-sass": "x",
     "bootstrap-rtl": "x"
   },
   "overrides": {

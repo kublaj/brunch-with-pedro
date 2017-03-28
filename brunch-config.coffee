@@ -42,6 +42,14 @@ exports.config =
       assets: /assets[\\/](?!javascripts)/
 
   plugins:
+    static:
+      processors: [
+        require('html-brunch-static') {
+          handlebars:
+            enableProcessor:true
+        }
+      ]
+      
     sass:
       debug: 'comments' # or set to 'debug' for the FireSass-style output
       mode: 'native' # set to 'ruby' to force ruby
@@ -51,4 +59,6 @@ exports.config =
 
     assetsmanager:
       copyTo:
-        'fonts': ['bower_components/bootstrap-sass-official/assets/fonts/bootstrap*']
+        'fonts': ['bower_components/bootstrap-sass/assets/fonts/bootstrap*']
+    
+
