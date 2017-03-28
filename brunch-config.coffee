@@ -51,4 +51,4 @@ exports.config =
 
     assetsmanager:
       copyTo:
-        'fonts': ['bower_components/bootstrap-sass-official/assets/fonts/bootstrap*']
+        'fonts': ['bower_components/bootstrap-sass/assets/fonts/bootstrap*']

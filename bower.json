@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "jquery": "1.11.1",
-    "bootstrap-sass-official": "x",
+    "bootstrap-sass": "x",
     "bootstrap-rtl": "x"
   },
   "overrides": {
