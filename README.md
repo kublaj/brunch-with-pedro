@@ -1,6 +1,6 @@
 # Brunch With Bower, Bootstrap Sass, jQuery and Handlebars
 
-[![dependency Status](https://david-dm.org/hyyan/brunch-with-pedro/status.svg)](https://david-dm.org/hyyan/brunch-with-pedro#info=dependencies)
+[![dependency Status](https://david-dm.org/pnmcosta/brunch-with-pedro/status.svg)](https://david-dm.org/hyyan/brunch-with-pedro#info=dependencies)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hyyan/brunch-with-pedro/blob/master/LICENSE)
 
 HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass, jQuery and Handlebars
