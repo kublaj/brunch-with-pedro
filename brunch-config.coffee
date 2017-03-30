@@ -33,7 +33,9 @@ exports.config =
         'css/editor-rtl.css': [
           /^(app[\\/]scss[\\/]editor-rtl)/
         ]
-
+    templates:
+        joinTo: 'js/templates.js'
+        
   conventions:
       # we don't want javascripts in asset folders to be copied like the one in
       # the bootstrap assets folder
