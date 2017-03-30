@@ -8,12 +8,17 @@
     "node": "~0.6.25 || 0.8 || 0.9"
   },
   "scripts": {
-    "postinstall": "bower install",
     "start": "brunch watch --server",
-    "test": "brunch test"
+    "debug": "brunch build -d",
+    "build": "brunch build --production"
   },
   "dependencies": {
-    "assetsmanager-brunch": "^1.8.1",
+    "jquery": "2.2.4",
+    "bootstrap-sass": "latest",
+    "bootstrap-rtl": "latest"
+  },
+  "devDependencies": {
+    "assetsmanager-brunch": "latest",
     "auto-reload-brunch": "latest",
     "clean-css-brunch": "latest",
     "css-brunch": "latest",
@@ -22,6 +27,5 @@
     "uglify-js-brunch": "latest",
     "brunch-static": "latest",
     "html-brunch-static": "latest"
-  },
-  "devDependencies": {}
+  }
 }

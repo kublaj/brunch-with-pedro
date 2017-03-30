@@ -1,29 +1,31 @@
 exports.config =
   # See http://brunch.io/#documentation for docs.
+
   npm:
-    enabled: false
+    globals:
+      $: 'jquery'
+      jQuery: 'jquery'
 
-  server:
-    run: true
-
-  paths:
-    public: 'public'
+  modules:
+    nameCleaner: (path) -> path.replace(/^app\/(?:scripts\/)?/, '')
+    autoRequire:
+      'js/app.js': ['init']
 
   files:
     javascripts:
       joinTo:
-        'js/jquery.js': /^(bower_components[\\/]jquery[\\/]dist[\\/]jquery.js)/
-        'js/app.js': /^(app[\\/]scripts)/
-        'js/vendor.js': /^(vendor|bower_components(?![\\/]jquery[\\/]dist[\\/]jquery.js))/
+        'js/jquery.js': /node_modules\/jquery\/dist\/jquery\.js/
+        'js/app.js': /^app/
+        'js/vendor.js':  /^(?!app|node_modules\/jquery\/dist\/jquery\.js)/
     stylesheets:
       joinTo:
         'css/app.css':[
            /^(app[\\/]scss[\\/]styles(?!-rtl))/
-           /bower_components[\\/](?!bootstrap-rtl[\\/]dist[\\/]css[\\/]bootstrap-rtl.css)/
+           /node_modules[\\/](?!bootstrap-rtl[\\/]dist[\\/]css[\\/]bootstrap-rtl.css)/
         ]
         'css/app-rtl.css': [
           /^(app[\\/]scss[\\/]styles-rtl)/
-          /(bower_components[\\/]bootstrap-rtl[\\/]dist[\\/]css[\\/]bootstrap-rtl.css)/
+          /(node_modules[\\/]bootstrap-rtl[\\/]dist[\\/]css[\\/]bootstrap-rtl.css)/
         ]
         'css/editor.css':[
            /^(app[\\/]scss[\\/]editor(?!-rtl))/
@@ -31,10 +33,6 @@ exports.config =
         'css/editor-rtl.css': [
           /^(app[\\/]scss[\\/]editor-rtl)/
         ]
-
-  modules:
-    wrapper: false
-    definition: false
 
   conventions:
       # we don't want javascripts in asset folders to be copied like the one in
@@ -55,10 +53,10 @@ exports.config =
       mode: 'native' # set to 'ruby' to force ruby
       allowCache: true
       options:
-        includePaths: ['bower_components']
+        includePaths: ['node_modules']
 
     assetsmanager:
       copyTo:
-        'fonts': ['bower_components/bootstrap-sass/assets/fonts/bootstrap*']
+        'fonts': ['node_modules/bootstrap-sass/assets/fonts/bootstrap*']
     
 
