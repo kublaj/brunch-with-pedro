@@ -1,4 +1,10 @@
 # CHANGELOG
+### 2.0.0
+
+* Removed deprecated brunch plugins
+* Removed Bower dependencies
+* NPM and CommonJS module wrapping support
+* Upgrade jQuery to ^v3
 
 ### 1.0.0
 

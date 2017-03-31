@@ -1,20 +1,19 @@
-# Brunch With Bower, Bootstrap Sass, jQuery and Handlebars
+# Brunch With Bootstrap Sass, jQuery, Handlebars and CommonJS wrapping
 
 [![dependency Status](https://david-dm.org/pnmcosta/brunch-with-pedro/status.svg)](https://david-dm.org/pnmcosta/brunch-with-pedro#info=dependencies)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pnmcosta/brunch-with-pedro/blob/master/LICENSE)
 
-HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass, jQuery and Handlebars
+HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass, jQuery, Handlebars and CommonJS wrapping
 
 ## Getting started
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
-    * [Bower](http://bower.io): `npm install -g bower`
-    * Brunch plugins and Bower dependencies: `npm install`.
+    * Brunch plugins and dependencies: `npm install`.
 * Run:
     * `npm start`             — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch build --production` — builds minified project for production
+    * `npm debug` — builds Brunch in debug mode.
+    * `npm build` — builds minified project for production
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
@@ -29,4 +28,3 @@ HTML5 application, built with [Brunch](http://brunch.io), Bootstrap Sass, jQuery
     * [Sass site](http://sass-lang.com)
     * [Bootstrap site](http://getbootstrap.com)
     * [Handlebars site](http://handlebarsjs.com)
-
