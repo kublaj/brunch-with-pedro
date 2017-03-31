@@ -33,6 +33,9 @@ exports.config =
         'css/editor-rtl.css': [
           /^(app[\\/]scss[\\/]editor-rtl)/
         ]
+    # something that probabaly needs to be addressed in brunch-static/brunch core
+    # see https://github.com/bmatcuk/brunch-static/blob/master/src/brunch-static.coffee#L8
+    # /\.static\.\w+$/ should not wrapped
     templates:
         joinTo: 'js/templates.js'
         
