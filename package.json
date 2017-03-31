@@ -13,7 +13,7 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "jquery": "2.2.4",
+    "jquery": "^3",
     "bootstrap-sass": "latest",
     "bootstrap-rtl": "latest"
   },
